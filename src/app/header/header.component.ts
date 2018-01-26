@@ -11,4 +11,8 @@ export class HeaderComponent implements OnInit {
 
   public ngOnInit() {
   }
+
+  public gotoGithub() {
+    window.open("https://github.com/mgaje", "_blank");
+  }
 }
