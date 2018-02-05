@@ -4,6 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { HeaderModule } from './header/header.module';
 import { ProjectsModule } from './projects/projects.module';
+import { FooterModule } from './footer/footer.module';
 
 import { AppComponent } from './app.component';
 
@@ -15,7 +16,8 @@ import { AppComponent } from './app.component';
     BrowserModule,
     BrowserAnimationsModule,
     HeaderModule,
-    ProjectsModule
+    ProjectsModule,
+    FooterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
