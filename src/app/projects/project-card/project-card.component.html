@@ -1,16 +1,16 @@
 <mat-card class="project-card">
   <mat-card-header>
-    <div mat-card-avatar></div>
-    <mat-card-title>Example Project</mat-card-title>
-    <mat-card-subtitle>Typescript</mat-card-subtitle>
+    <div mat-card-avatar class="project-card-avatar" [style.background-image]="'url(' + avatar + ')'"></div>
+    <mat-card-title>{{title}}</mat-card-title>
+    <mat-card-subtitle>{{subtitle}}</mat-card-subtitle>
   </mat-card-header>
-  <img mat-card-image src="/assets/images/prism.png" alt="Project Card Image" />
+  <img mat-card-image [src]="image" alt="Project Card Image" />
   <mat-card-content>
-    <p>This is some content</p>
+    <p>{{content}}</p>
   </mat-card-content>
   <mat-card-actions>
     <div fxFlex></div>
-    <button mat-button color="primary">View On Github</button>
+    <button mat-button color="primary" (click)="gotoGithub()">View On Github</button>
     <div fxFlex></div>
   </mat-card-actions>
 </mat-card>

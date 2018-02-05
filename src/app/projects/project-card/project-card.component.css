@@ -2,3 +2,8 @@
 {
     width: 500px;
 }
+
+.project-card-avatar
+{
+    background-size: cover;
+}
