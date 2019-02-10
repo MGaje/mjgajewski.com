@@ -1,4 +1,4 @@
-<mat-card class="project-card">
+<mat-card class="project-card" [@enterAnimation]>
   <mat-card-header>
     <div mat-card-avatar class="project-card-avatar" [style.background-image]="'url(' + avatar + ')'"></div>
     <mat-card-title>{{title}}</mat-card-title>
@@ -10,7 +10,7 @@
   </mat-card-content>
   <mat-card-actions>
     <div fxFlex></div>
-    <button mat-button color="primary" (click)="gotoGithub()">View On Github</button>
+    <button mat-raised-button color="accent" (click)="gotoGithub()">View On Github</button>
     <div fxFlex></div>
   </mat-card-actions>
 </mat-card>

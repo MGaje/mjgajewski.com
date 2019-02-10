@@ -1,5 +1,5 @@
-<div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="20px" fxLayoutWrap class="project-list-layout">
-  <div fxFlex="25%" fxFlex.xs="90%" class="project-list-sep">
+<div fxLayout="row" fxLayoutAlign="center space-between" fxLayoutGap="20px" fxLayout.xs="column" fxLayout.sm="column" fxFlex class="project-list-layout">
+  <div fxFlex="25%" fxFlex.xs="100%" fxLayoutAlign=" space-between" class="project-list-sep">
       <app-project-card 
         avatar="/assets/images/typescript-logo.png"
         title="Prism - Discord Bot" 
@@ -10,4 +10,26 @@
       >
       </app-project-card>
   </div>
+  <div fxFlex="25%" fxFlex.xs="100%" fxLayoutAlign=" space-between" class="project-list-sep">
+    <app-project-card 
+      avatar="/assets/images/typescript-logo.png"
+      title="Soundboard - Discord Bot" 
+      subtitle="Typescript/Node.js" 
+      image="/assets/images/soundboard.png"
+      content="A Discord bot that plays the specified sound file (if it exists) in a voice channel. Sound files are uploaded by DMing the bot an attachment of the soundfile. It uses ffmpeg's normalization filter to maintain a consistent volume level across every sound file."
+      url="https://github.com/MGaje/discord-soundboard-node"
+    >
+    </app-project-card>
+  </div>
+  <div fxFlex="25%" fxFlex.xs="100%" fxLayoutAlign=" space-between" class="project-list-sep">
+      <app-project-card 
+        avatar="/assets/images/c-sharp-logo.png"
+        title="Playnite Persist Plugin" 
+        subtitle="C#" 
+        image="/assets/images/playnite-persist-plugin.png"
+        content="A plugin for Playnite (a launcher that brings games from most other launchers under one roof) to persist game data to Google Drive. Every time I stop playing a game I launched from Playnite, the plugin fires off the logic to backup the data to Google Drive."
+        url="https://github.com/MGaje/PlaynitePersistPlugin"
+      >
+      </app-project-card>
+    </div>
 </div>
