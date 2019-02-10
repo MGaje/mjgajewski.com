@@ -7,3 +7,17 @@
 {
     margin-bottom: 20px;
 }
+
+@media only screen and (max-width: 599px) {
+    .project-list-layout
+    {
+        margin-top: 70px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 959px) {
+    .project-list-layout
+    {
+        margin-top: 70px;
+    }
+}
